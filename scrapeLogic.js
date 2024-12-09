@@ -2,6 +2,7 @@ const puppeteer = require("puppeteer");
 require("dotenv").config();
 
 const scrapeLogic = async (res) => {
+    res.send("Hello from Scrapelogic");
     const browser = await puppeteer.launch({
         args: [
             "--disable-setuid-sandbox",
